@@ -18,7 +18,8 @@
 
   <nav class="navbar">
     <div class="logo">
-      <img src="./Assets/logo.svg" alt="Car Rental Logo">
+      <a href="index.html"><img src="./Assets/main-logo.svg" alt="Car Rental Logo">
+      </a>
     </div>
     <ul class="nav-links">
       <li><a href="#">About</a></li>
@@ -74,30 +75,37 @@
 
     <form class="booking-form">
       <div class="form-item">
-        <label for="location" class="icon-location">📍</label>
+        <label for="location" class="icon-location"><img src="./Assets/location-icon.svg" alt="location-icon"></label>
+
         <select id="location" name="location" class="dropdown-select-booking">
           <option value="al-quoz" selected>Al Quoz</option>
           <option value="downtown">Downtown</option>
           <option value="burj-khalifa">Burj Khalifa</option>
-          <!-- Add more options as needed -->
+          <!-- Add more options if u needed -->
         </select>
-        <span class="dropdown-icon">▼</span>
+
+        <span class="dropdown-icon"><img src="./Assets/dropdown-icon.svg" alt=""></span>
       </div>
       <div class="form-item">
-        <label for="pickup-date" class="icon-calendar">📅</label>
+        <label for="pickup-date" class="icon-calendar"><img src="./Assets/calender-icon.svg"
+            alt="colender-icon"></label>
         <input type="date" id="pickup-date" name="pickup-date" value="2023-10-30">
         <input type="time" id="pickup-time" name="pickup-time" value="09:00">
       </div>
       <div class="form-item">
-        <label for="dropoff-date" class="icon-calendar">📅</label>
+        <label for="dropoff-date" class="icon-calendar"><img src="./Assets/calender-icon.svg"
+            alt="colender-icon"></label>
         <input type="date" id="dropoff-date" name="dropoff-date" value="2023-11-29">
         <input type="time" id="dropoff-time" name="dropoff-time" value="09:00">
       </div>
-      <div class="form-item">
-        <button type="submit" class="search-icon">🔍</button>
+
+      <div class=" search-icon ">
+        <button type="submit" class="search-icon-button"><img src="./Assets/search-line-icon.svg"
+            alt="serch icon"></button>
       </div>
+
       <div class="vertical-line"></div>
-      <div class="form-item">
+      <div class="form-item q-book">
         <button type="submit" class="quick-book">Quick Book</button>
       </div>
     </form>
@@ -106,14 +114,21 @@
     <div class="app-download">
       <span>Download our App for easy accessibility anytime, anywhere!</span>
       <div class="store-buttons">
-        <img src="path/to/appstore.png" alt="App Store">
-        <img src="path/to/googleplay.png" alt="Google Play">
+        <img src="./Assets/app-store-button.svg" alt="App Store">
+        <img src="./Assets/play-store-button.svg" alt="Google Play">
       </div>
     </div>
   </section>
-
   <!--Booking Section End-->
+  <!--Banner Section End-->
+  <div class="banner-section">
+    <img src="./Assets//banner-1.svg" alt="Banner Image">
+    <div class="banner-content">
+      <h1>Recieve guarnteed Here<button>GIFT VOUCHER</button><br>on a monthly hire or lease</h1>
 
+    </div>
+  </div>
+  <!--Banner Section End-->
 </body>
 
 </html>
