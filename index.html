@@ -4,20 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <title>Car Rental Service</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div class="container">
+  <nav class="navbar">
     <div class="logo">
-      <h1>CAR RENTAL</h1>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5N-jO_L_t-N-d3hL0M37316J1w_d1D7J_6w&usqp=CAU"
-        alt="Logo">
+      <img src="./Assets/logo.svg" alt="Car Rental Logo">
     </div>
-
-    <ul class="nav">
+    <ul class="nav-links">
       <li><a href="#">About</a></li>
       <li><a href="#">Offers</a></li>
       <li><a href="#">Corporate</a></li>
@@ -25,36 +28,30 @@
       <li><a href="#">Locations</a></li>
       <li><a href="#">Contact Us</a></li>
     </ul>
-
-    <div class="social">
-      <a href="#"><img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7uW9Kz5fV9D9X35d2-R6q1q0-32y0O2h7vQ&usqp=CAU"
-          alt="Facebook"></a>
-      <a href="#"><img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT28q5Z1z6aG9Q5N0L2K-B9o-v121nL67H9Sg&usqp=CAU"
-          alt="Instagram"></a>
-      <a href="#"><img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5N-jO_L_t-N-d3hL0M37316J1w_d1D7J_6w&usqp=CAU"
-          alt="Twitter"></a>
-      <a href="#"><img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp-F6b6a1K2o983Z70Y_v0Zv1t8v-uQ7G15Q&usqp=CAU"
-          alt="Linkedin"></a>
-      <div class="bell">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp-F6b6a1K2o983Z70Y_v0Zv1t8v-uQ7G15Q&usqp=CAU"
-          alt="Bell">
-        <span>1</span>
+    <div class="right-icons">
+      <div class="social-icons">
+        <a href="#"><img src="./Assets/facebook-logo.svg"></a>
+        <a href="#"><img src="./Assets/insta-logo.svg"></a>
+        <a href="#"><img src="./Assets/x-logo.svg"></a>
+        <a href="#"><img src="./Assets/linkedin-logo.svg"></a>
       </div>
-      <button class="btn">Jhon Doe</button>
+      <div class="profile">
+        <div class="notification">
+          <img src="./Assets/notification-icon.svg" alt="">
+          <!--<span class="notification-count">1</span>-->
+        </div>
+        <a href="#" class="profile-link">
+          <div class="profile-icon">J</div>
+          <span class="profile-name">Jhon Doe</span>
+        </a>
+      </div>
     </div>
-  </div>
+  </nav>
 
-  <div class="footer">
-    Sunday Pick Up/Drop-Off only at Dubai Silicon Oasis & Habtoor Grand Sales Counters | All Rates inclusive of VAT.
-    T&C's apply | Follow us on Social Media for New Offers
+  <div class="under-text-container">
+    <span class="under-text">Sunday Pick Up/Drop-Off only at Dubai Silicon Oasis & Habtoor Grand Sales Counters | All
+      Rates inclusive of VAT. T&C's apply | Follow us on Social Media for New Offers</span>
   </div>
-
 </body>
-
-
 
 </html>

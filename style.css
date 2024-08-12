@@ -1,93 +1,168 @@
-body {
+/* Reset some default styles */
+* {
   margin: 0;
-  font-family: sans-serif;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-.container {
+/* Navbar container */
+.navbar {
   display: flex;
+  height: 93px;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 10px 20px;
+  background-color: #fff;
+  margin-right: 65px;
 }
 
+/* Logo section */
 .logo {
   display: flex;
   align-items: center;
-}
-
-.logo h1 {
-  font-size: 32px;
-  font-weight: bold;
-  margin: 0 20px 0 0;
+ 
 }
 
 .logo img {
-  height: 80px;
+  height: 40px;
+  margin-left: 64px;
+  width: 370px; 
+  height: 54px; 
+  margin-top: 39px;
+
 }
 
-.nav {
+.logo .logo-title {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  font-style: italic;
+  padding-left: 64px;
+  padding-top: 39px;
+}
+
+/* Navigation links */
+.nav-links {
   display: flex;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin-left: 207px;
+  margin-top: 54px;
+  
 }
 
-.nav li {
+.nav-links li {
   margin: 0 15px;
+  padding: 3px auto;
+  gap: 32px;
 }
 
-.nav a {
+.nav-links a {
   text-decoration: none;
-  color: #333;
-  font-weight: bold;
+  color: #000;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22.5px;
 }
 
-.social {
+/* Right icons container */
+.right-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
+ 
+}
+
+/* Social icons */
+.social-icons {
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 15.5px;
+  margin-right: 75px;
+ 
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #000;
+  fill: #000;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+/* Notification and profile */
+.profile {
   display: flex;
   align-items: center;
+  width: 160px;
+  height: 29px;
+  
+ 
 }
 
-.social a {
-  margin: 0 10px;
-  text-decoration: none;
-}
-
-.social img {
-  height: 20px;
-}
-
-.bell {
+.notification {
   position: relative;
   margin-right: 20px;
+  font-size: 20px;
 }
 
-.bell img {
-  height: 24px;
-}
-
-.bell span {
+/*.notification .notification-count {
   position: absolute;
-  top: -5px;
-  right: -5px;
-  background-color: #4CAF50;
-  color: white;
-  font-size: 12px;
-  padding: 2px 5px;
+  top: -2px;
+  right: -10px;
+  background-color: #00b300;
+  color: #fff;
   border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}*/
+
+.profile-link {
+  display: inline-flex;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
 }
 
-.btn {
-  background-color: black;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.profile-icon {
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 8px;
 }
 
-.footer {
-  text-align: center;
-  padding: 20px;
+.profile-name {
+  color: #ffffff;
+  font-weight: 400;
   font-size: 14px;
-  color: #666;
+  line-height: 21px;
 }
+
+/* Under-text container */
+.under-text-container {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: right;
+  font-size: 1rem;
+}
+
+.under-text {
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center; /
