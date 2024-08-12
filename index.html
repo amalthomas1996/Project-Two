@@ -20,15 +20,6 @@
     <div class="logo">
       <img src="./Assets/logo.svg" alt="Car Rental Logo">
     </div>
-
-    <!-- Hamburger menu for mobile view -->
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <label for="menu-toggle" class="menu-icon">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-
     <ul class="nav-links">
       <li><a href="#">About</a></li>
       <li><a href="#">Offers</a></li>
@@ -37,7 +28,6 @@
       <li><a href="#">Locations</a></li>
       <li><a href="#">Contact Us</a></li>
     </ul>
-
     <div class="right-icons">
       <div class="social-icons">
         <a href="#"><img src="./Assets/facebook-logo.svg"></a>
@@ -58,12 +48,11 @@
       </div>
     </div>
   </nav>
-
   <div class="under-text-container">
     <span class="under-text">Sunday Pick Up/Drop-Off only at Dubai Silicon Oasis & Habtoor Grand Sales Counters | All
       Rates inclusive of VAT. T&C's apply | Follow us on Social Media for New Offers</span>
   </div>
-
+  <!--Nav Bar end-->
   <!--Booking Section-->
   <section class="booking-section">
     <div class="location-select">
@@ -71,7 +60,7 @@
       <span class="dropoff-option">Different Drop-Off</span>
       <div class="vehicle-select">
         <select id="vehicle-type" class="dropdown-select">
-          <option class="vehicle-option" value="" disabled selected>Select vehicle type</option>
+          <option value="" disabled selected>Select vehicle type</option>
           <option value="sedan">Sedan</option>
           <option value="suv">SUV</option>
           <option value="truck">Truck</option>
@@ -81,29 +70,38 @@
 
     </div>
 
-    <div class="booking-form">
+    <!-- Booking Form -->
+
+    <form class="booking-form">
       <div class="form-item">
-        <div class="icon-location">📍</div>
-        <span>Al Quoz</span>
+        <label for="location" class="icon-location">📍</label>
+        <select id="location" name="location" class="dropdown-select-booking">
+          <option value="al-quoz" selected>Al Quoz</option>
+          <option value="downtown">Downtown</option>
+          <option value="burj-khalifa">Burj Khalifa</option>
+          <!-- Add more options as needed -->
+        </select>
         <span class="dropdown-icon">▼</span>
       </div>
       <div class="form-item">
-        <div class="icon-calendar">📅</div>
-        <span>30/10/2023</span>
-        <span>09:00 AM</span>
+        <label for="pickup-date" class="icon-calendar">📅</label>
+        <input type="date" id="pickup-date" name="pickup-date" value="2023-10-30">
+        <input type="time" id="pickup-time" name="pickup-time" value="09:00">
       </div>
       <div class="form-item">
-        <div class="icon-calendar">📅</div>
-        <span>29/11/2023</span>
-        <span>09:00 AM</span>
+        <label for="dropoff-date" class="icon-calendar">📅</label>
+        <input type="date" id="dropoff-date" name="dropoff-date" value="2023-11-29">
+        <input type="time" id="dropoff-time" name="dropoff-time" value="09:00">
       </div>
-      <div class="form-item search-icon">
-        🔍
+      <div class="form-item">
+        <button type="submit" class="search-icon">🔍</button>
       </div>
-      <div class="form-item quick-book">
-        Quick Book
+      <div class="vertical-line"></div>
+      <div class="form-item">
+        <button type="submit" class="quick-book">Quick Book</button>
       </div>
-    </div>
+    </form>
+
 
     <div class="app-download">
       <span>Download our App for easy accessibility anytime, anywhere!</span>
