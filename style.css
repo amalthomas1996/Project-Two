@@ -186,7 +186,7 @@
 /*-------- Booking Section------- */
 
 .booking-section {
-  margin-top: 28px;
+  margin-top: 8px;
   background-image: url(./Assets/red-bg-vector.svg);
   background-size: cover;
   background-position: center;
@@ -403,9 +403,14 @@
   cursor: pointer;
   flex: 1; 
   box-sizing: border-box;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   
 }
-
+.quick-book:hover{
+  color: #ffffff;
+  transform: translateY(-2px);
+}
 .dropdown-icon {
   margin-left: 8px;
   font-size: 18px; 
@@ -442,9 +447,11 @@
   width: 109.87px; 
   height: 32px; 
 }
+/* banner Section */
 .banner-section{
   height: 500px;
   margin: 0 auto;
+  margin-top: 8px;
   margin-left: 65px;
   margin-right: 65px;
   border-radius: 23px;
@@ -462,26 +469,164 @@
   top: 75%; 
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
+  text-align: left;
 
   color: white;
 }
 
-.banner-content h1 {
-  margin-bottom: 15px; /* Space between text and button */
-  font-size: 24px; /* Adjust the text size */
+.banner-content h3 {
+  margin-bottom: 15px; 
+  font-weight: 300;
+  font-size: 18.37px;
+  line-height: 26.91px;
+  letter-spacing: 1.5px; 
 }
 
 .banner-content button {
   padding: 10px 20px;
-  background-color: #007BFF; /* Button background color */
+  background-color: #009046; 
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 32px;
   cursor: pointer;
   font-size: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .banner-content button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #015027;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); 
+}
+
+
+
+/* Popular Cars Section */
+/*---------------------*/
+.popular-cars-section {
+  margin: 20px 0px;
+  margin-left: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  
+
+}
+.popular-cars-section h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 34.74px;
+  line-height: 52.11px;
+  padding-bottom: 20px;
+}
+
+.car-cards-container {
+  display: flex;
+  width: 100%; 
+  scrollbar-width: none; 
+}
+
+.car-cards-container::-webkit-scrollbar {
+  display: none;
+}
+
+.car-card {
+  display: flex;
+  border: 1px solid #D9D9D9;
+  background-color: #fff;
+  width: 754px;
+  height: 290px;
+  flex: 0 0 auto; 
+  margin-right: 25px;
+}
+
+.car-image {
+  width: 360px;
+  height: 290px;
+  object-fit: cover;
+}
+
+.car-details {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 394px; 
+}
+.car-details h3 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+  padding-bottom: 20px;
+  
+}
+
+.car-details p {
+  font-size: 16px;
+  text-align: left;
+  opacity: 80%;
+  word-wrap: break-word; 
+  overflow-wrap: break-word;
+  line-height: 1.5; 
+  margin-bottom: 10px;
+}
+
+.car-svg-container {
+  display: flex;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+.car-svg-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.car-svg {
+  width: auto;
+  height: 17px;
+}
+
+.car-svg-item span {
+  opacity: 90%;
+  font-weight: 500;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.price-book-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.price-book-container span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.price-book-container button {
+  padding: 10px 20px;
+  background-color: #E21E26;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.price-book-container button:hover {
+  background-color: #d30000;
+  transform: translateY(-2px);
 }
