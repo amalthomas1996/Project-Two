@@ -866,3 +866,38 @@
     align-items: center;
   }
 }
+
+/* Locations */
+.locations {
+  height: 325px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000;
+  margin: 20px 65px;
+  padding: 20px;
+  
+}
+
+.locations h1 {
+  margin: 50px 0px;
+}
+
+.location {
+  display: inline-flex;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  gap:20px;
+}
+
+.location img {
+  margin-right: 10px;
+  width: 22px;
+  height: 28px;
+}
+.vertical-line-location {
+  width: 1px;
+  height: 30px;
+  background-color: white;
+}
+
