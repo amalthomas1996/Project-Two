@@ -224,7 +224,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 300px;
+  width: 400px;
   /* Fixed width */
   height: 543px;
   /* Fixed height */
@@ -233,6 +233,7 @@
   /* Ensure it's on top of everything */
   flex-direction: column;
   align-items: center;
+
   justify-content: space-between;
   /* Space between items */
   padding-top: 40px;
@@ -351,6 +352,13 @@
     display: flex;
     transform: translateX(0);
   }
+}
+
+.mobile-nav-links .mobile {
+  width: 250px;
+  height: 1px;
+  background-color: rgb(172, 172, 172);
+
 }
 
 /* -------- Booking Section------- */
