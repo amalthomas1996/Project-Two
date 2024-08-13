@@ -203,8 +203,7 @@
 }
 
 
-/*-------- Booking Section------- */
-
+/* -------- Booking Section------- */
 .booking-section {
   margin-top: 8px;
   background-image: url(./Assets/red-bg-vector.svg);
@@ -234,14 +233,12 @@
 
 .pickup-option,
 .dropoff-option {
-
   font-weight: 400;
   font-size: 14px;
   margin-right: 20px;
   line-height: 1.5;
   opacity: 0.5;
   border-bottom: 1px solid transparent;
-
 }
 
 .pickup-option:hover,
@@ -289,7 +286,6 @@
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;
-
 }
 
 /* Booking Form */
@@ -312,7 +308,6 @@
   align-items: center;
   flex: 1;
   cursor: pointer;
-
   box-sizing: border-box;
 }
 
@@ -321,7 +316,6 @@
   background-color: transparent;
   border: none;
   text-decoration: none;
-
 }
 
 /* hide date time picker */
@@ -336,11 +330,6 @@
 }
 
 .form-item input[type="time"]::-webkit-calendar-picker-indicator {
-  display: none;
-}
-
-.form-item input[type="date"]::-webkit-inner-spin-button,
-.form-item input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
 }
 
@@ -359,7 +348,6 @@
 .search-icon {
   margin-right: 8px;
   font-size: 18px;
-
 }
 
 .dropdown-select-booking {
@@ -377,7 +365,6 @@
   appearance: none;
   background-color: white;
   box-sizing: border-box;
-
 }
 
 .dropdown-select-booking option {
@@ -392,7 +379,6 @@
 
 .dropdown-select:focus {
   outline: none;
-
 }
 
 .search-icon {
@@ -408,7 +394,6 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-
 .search-icon-button {
   background: none;
   border: none;
@@ -422,7 +407,6 @@
 }
 
 .quick-book {
-
   padding: 8px 16px;
   background-color: white;
   color: #d71f26;
@@ -434,9 +418,7 @@
   cursor: pointer;
   flex: 1;
   box-sizing: border-box;
-
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-
 }
 
 .quick-book:hover {
@@ -481,7 +463,94 @@
   height: 32px;
 }
 
-/* banner Section */
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .booking-section {
+    margin: 20px 32px;
+  }
+
+  .location-select {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .booking-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-item {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .quick-book {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+  }
+
+  .app-download {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .store-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .booking-section {
+    margin: 20px 16px;
+    padding: 15px;
+  }
+
+  .location-select {
+    justify-content: space-between;
+  }
+
+  .app-download {
+    font-size: 12px;
+  }
+
+  .store-buttons img {
+    width: 90px;
+    height: 27px;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-section {
+    margin: 20px 8px;
+  }
+
+  .location-select {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .form-item {
+    max-width: 260px;
+  }
+
+  .quick-book {
+    max-width: 260px;
+  }
+
+  .app-download {
+    font-size: 10px;
+  }
+
+  .store-buttons img {
+    width: 80px;
+    height: 24px;
+  }
+}
+
+/* Banner Section */
 .banner-section {
   height: 500px;
   margin: 0 auto;
@@ -491,6 +560,7 @@
   border-radius: 23px;
   overflow: hidden;
   background-color: #f5f5f5;
+  position: relative;
 }
 
 .banner-section img {
@@ -499,14 +569,13 @@
   object-fit: cover;
 }
 
-/* banner Content */
+/* Banner Content */
 .banner-content {
   position: absolute;
   top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: left;
-
   color: white;
 }
 
@@ -535,36 +604,96 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .banner-section {
+    margin-left: 32px;
+    margin-right: 32px;
+    height: 400px;
+  }
 
+  .banner-content h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .banner-content button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-section {
+    margin-left: 16px;
+    margin-right: 16px;
+    height: 300px;
+  }
+
+  .banner-content {
+    top: 70%;
+    text-align: center;
+  }
+
+  .banner-content h3 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .banner-content button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-section {
+    margin-left: 8px;
+    margin-right: 8px;
+    height: 250px;
+  }
+
+  .banner-content {
+    top: 65%;
+    text-align: center;
+  }
+
+  .banner-content h3 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .banner-content button {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+}
 
 /* Popular Cars Section */
-/*---------------------*/
 .popular-cars-section {
-  margin: 20px 0px;
+  margin: 20px 0;
   margin-left: 65px;
+  margin-right: 65px;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;
-
-
 }
 
 .popular-cars-section h2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-weight: 400;
   font-size: 34.74px;
   line-height: 52.11px;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 .car-cards-container {
   display: flex;
   width: 100%;
+  overflow-x: auto;
   scrollbar-width: none;
+  padding-bottom: 15px;
 }
 
 .car-cards-container::-webkit-scrollbar {
@@ -601,7 +730,6 @@
   font-size: 28px;
   line-height: 42px;
   padding-bottom: 20px;
-
 }
 
 .car-details p {
@@ -669,6 +797,151 @@
   transform: translateY(-2px);
 }
 
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .car-card {
+    width: 600px;
+    height: 250px;
+  }
+
+  .car-image {
+    width: 300px;
+    height: 250px;
+  }
+
+  .car-details h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .car-details p {
+    font-size: 14px;
+  }
+
+  .price-book-container span {
+    font-size: 14px;
+  }
+
+  .price-book-container button {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .car-card {
+    width: 500px;
+    height: 220px;
+  }
+
+  .car-image {
+    width: 240px;
+    height: 220px;
+  }
+
+  .car-details h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .car-details p {
+    font-size: 13px;
+  }
+
+  .car-svg-container {
+    gap: 15px;
+  }
+
+  .price-book-container span {
+    font-size: 13px;
+  }
+
+  .price-book-container button {
+    font-size: 12px;
+    padding: 7px 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .car-card {
+    width: 400px;
+    height: 200px;
+  }
+
+  .car-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .car-details h3 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .car-details p {
+    font-size: 12px;
+  }
+
+  .car-svg-container {
+    gap: 10px;
+  }
+
+  .price-book-container span {
+    font-size: 12px;
+  }
+
+  .price-book-container button {
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .car-card {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .car-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .car-details {
+    padding: 15px;
+  }
+
+  .car-details h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .car-details p {
+    font-size: 12px;
+  }
+
+  .car-svg-container {
+    gap: 8px;
+  }
+
+  .price-book-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .price-book-container span {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .price-book-container button {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+}
+
+/* Subscribe Section */
 /* Subscribe Section */
 .subscribe-container {
   margin: 20px 65px;
@@ -717,7 +990,6 @@
   width: 223px;
   flex: 0 0 223px;
   background-color: #F8F8F8;
-
 }
 
 .subscribe-button {
@@ -760,7 +1032,6 @@
 .phone-mockup img {
   max-width: 100%;
   height: 417px;
-
 }
 
 .phone-form {
@@ -804,7 +1075,6 @@
 }
 
 .phone-button {
-
   padding: 10px 20px;
   background-color: #000000;
   color: #ffffff;
@@ -812,10 +1082,9 @@
   border-radius: 8px;
   cursor: pointer;
   margin-bottom: 20px;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 14px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-
 }
 
 .phone-button:hover {
@@ -829,7 +1098,6 @@
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-
 }
 
 .app-buttons .app-button {
@@ -837,16 +1105,150 @@
   height: 30px;
   margin-right: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-
 }
 
 .app-buttons .app-button:hover {
   transform: translateY(-2px);
-
 }
 
-/* Steps Section  */
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .subscribe-container {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+  }
 
+  .subscribe-left {
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+
+  .subscribe-button {
+    width: 100%;
+  }
+
+  .subscribe-right {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .phone-mockup img {
+    height: auto;
+  }
+
+  .phone-form {
+    padding-left: 0;
+    padding-top: 20px;
+  }
+
+  .phone-form input {
+    width: 100%;
+  }
+
+  .app-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .app-buttons .app-button {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .subscribe-left h1 {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  .subscribe-left {
+    padding-right: 0;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .form-input-subscribe {
+    width: 100%;
+    max-width: 300px;
+    /* Add a max-width to prevent it from becoming too large */
+    margin-bottom: 10px;
+  }
+
+  .subscribe-button {
+    width: 100%;
+    max-width: 300px;
+    /* Add a max-width to keep the button size consistent */
+    height: 50px;
+  }
+
+  .phone-form {
+    padding-left: 0;
+  }
+
+  .phone-form p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .phone-button {
+    width: 100%;
+    height: 45px;
+    max-width: 300px;
+  }
+
+  .phone-form input {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .subscribe-container {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .subscribe-left h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .subscribe-form {
+    gap: 5px;
+  }
+
+  .subscribe-button {
+    font-size: 14px;
+    height: 45px;
+  }
+
+  .phone-form p {
+    font-size: 10px;
+  }
+
+  .phone-form input {
+    font-size: 10px;
+    height: 25px;
+  }
+
+  .phone-button {
+    font-size: 12px;
+    height: 40px;
+  }
+
+  .app-buttons .app-button {
+    width: 80px;
+  }
+}
+
+
+
+/* Steps Section  */
 .steps {
   padding: 40px;
   text-align: center;
@@ -860,7 +1262,8 @@
   color: #333;
 }
 
-.stpes-container {
+.steps-container {
+  /* Corrected the class name */
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -871,7 +1274,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .step {
@@ -886,7 +1288,6 @@
 .step-icon {
   width: 60px;
   height: 60px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -905,11 +1306,22 @@
 }
 
 @media (max-width: 768px) {
-  .stpes-container {
+  .steps-container {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
+    /* Adjust the gap for smaller screens */
+  }
+
+  .step {
+    width: 100%;
+    /* Make steps take full width on smaller screens */
+    max-width: 348px;
+    /* Ensure they don't stretch too much */
   }
 }
+
+
 
 /* Locations */
 .locations {
