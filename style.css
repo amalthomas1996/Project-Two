@@ -990,3 +990,111 @@
   content: url('./Assets/xicon.svg');
 
 }
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 303px;
+}
+
+footer .logo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 30px;
+  justify-content: flex-start;
+}
+
+footer .logo p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+
+footer .nav {
+  display: flex;
+  flex: 2;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .nav-section {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+}
+
+footer .nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+footer .social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .social-links p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #fff;
+}
+
+footer .social-links .icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-links .icons a {
+  display: inline-block;
+}
+
+.social-links .icons img {
+  height: 17px;
+  width: auto;
+}
+
+.social-links .security-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-links .security-icons img {
+  height: 30px;
+  width: auto;
+}
+
+/* New styles for copyright section */
+footer .footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+}
+
+footer .footer-bottom hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #fff;
+  margin-bottom: 10px;
+}
+
+footer .footer-bottom p {
+  font-size: 14px;
+}
