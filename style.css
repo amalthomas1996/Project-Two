@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+ 
   
 }
 
@@ -475,7 +476,7 @@
 }
 
 .banner-content h3 {
-  margin-bottom: 15px; 
+  margin-bottom: -20rem;
   font-weight: 300;
   font-size: 18.37px;
   line-height: 26.91px;
@@ -615,7 +616,7 @@
 
 .price-book-container button {
   padding: 10px 20px;
-  background-color: #E21E26;
+  background-color: #e53935;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -629,4 +630,239 @@
 .price-book-container button:hover {
   background-color: #d30000;
   transform: translateY(-2px);
+}
+
+/* Subscribe Section */
+.subscribe-container {
+  margin: 20px 65px;
+  padding: 40px;
+  height: 506px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fffdfd;
+  color: #000000;
+  border-radius: 10px;
+}
+
+.subscribe-left {
+  flex: 1;
+  padding-right: 80px;
+}
+
+.subscribe-left h1 {
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 51px;
+  margin-bottom: 20px;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form-input-subscribe {
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 223px;
+  flex: 0 0 223px; 
+  background-color: #F8F8F8;
+  
+}
+
+.subscribe-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #E21E26;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-start;
+  margin-top: 20px;
+  width: 464px;
+  height: 57px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.subscribe-button:hover{
+  background-color: #b60805;
+  transform: translateY(-2px);
+}
+
+/* Subscribe Right */
+.subscribe-right {
+  display: flex;
+  align-items: center;
+  background-color: #E21E26;
+  padding: 20px;
+  flex: 1;
+}
+
+.phone-mockup {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-mockup img {
+  max-width: 100%;
+  height: 417px;
+ 
+}
+
+.phone-form {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20px;
+  background-color: #E21E26;
+  padding: 20px;
+  border-radius: 10px;
+  color: #333;
+}
+
+.phone-form p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21.5px;
+  color: #ffffff;
+}
+.phone-form input{
+  width: 263px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 20px;
+  background-color: #F8F8F8;
+  border: none;
+}
+.form-input-text{
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.phone-button {
+ 
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: 500px;
+  font-size: 14px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+.phone-button:hover{
+  color: #000000;
+  background-color: #d71f26;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1); 
+} 
+
+.app-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  
+}
+.app-buttons .app-button{
+  width: 103px;
+  height: 30px;
+  margin-right: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+.app-buttons .app-button:hover{
+  transform: translateY(-2px);
+ 
+}
+
+/* Steps Section  */
+
+.steps {
+  padding: 40px;
+  text-align: center;
+}
+
+.steps h2 {
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 51px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.stpes-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.step-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+.step {
+  width: 348px;
+  height: 178px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.step-icon {
+  width: 60px;
+  height: 60px;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.step-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.step-description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.5px;
+}
+
+@media (max-width: 768px) {
+  .stpes-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
