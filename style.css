@@ -49,6 +49,7 @@
 
 .nav-links a:hover {
   color: red;
+
 }
 
 .right-icons {
@@ -92,6 +93,10 @@
   border-radius: 20px;
   text-decoration: none;
   font-family: Arial, sans-serif;
+}
+
+.profile-link:hover {
+  background-color: #E21E26;
 }
 
 .profile-icon {
@@ -423,7 +428,8 @@
 
 .quick-book:hover {
   color: #ffffff;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+
 }
 
 .dropdown-icon {
@@ -461,7 +467,13 @@
 .store-buttons img {
   width: 109.87px;
   height: 32px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.store-buttons img:hover {
+  transform: translateY(-2px);
+}
+
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
