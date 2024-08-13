@@ -16,3 +16,27 @@ faqItems.forEach(item => {
     }
   });
 });
+
+//hamburger Menu
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
+const loginSignupBtn = document.querySelector('.login-signup-btn');
+
+hamburger.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+  hamburger.classList.toggle('menu-open'); // Toggle the class for the hamburger to transform
+});
+
+// Close the menu when any link or the Log In/Sign Up button is clicked
+mobileNavLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.remove('active');
+    hamburger.classList.remove('menu-open'); // Remove the class when closing the menu
+  });
+});
+
+loginSignupBtn.addEventListener('click', () => {
+  mobileMenu.classList.remove('active');
+  hamburger.classList.remove('menu-open');
+});
