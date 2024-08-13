@@ -992,11 +992,17 @@
 }
 
 /* Footer */
+
 footer {
   background-color: #000;
   color: #fff;
   padding: 20px 0;
   font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
 
 footer .container {
@@ -1013,14 +1019,25 @@ footer .logo {
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   margin-right: 30px;
-  justify-content: flex-start;
+  justify-content: center;
+  margin-left: -200px;
+}
+
+footer .logo img {
+  height: 150px;
+  margin-bottom: 10px;
+  margin-left: -40px;
 }
 
 footer .logo p {
-  margin: 10px 0 0 0;
-  font-size: 14px;
+  margin-top: -40px;
+  font-size: 18px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
 }
 
 footer .nav {
@@ -1028,7 +1045,9 @@ footer .nav {
   flex: 2;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-left: 150px;
 }
+
 
 footer .nav-section {
   display: flex;
@@ -1047,6 +1066,8 @@ footer .social-links {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 300px;
+
 }
 
 footer .social-links p {
@@ -1082,10 +1103,10 @@ footer .social-links .icons {
   width: auto;
 }
 
-/* New styles for copyright section */
 footer .footer-bottom {
   text-align: center;
   padding-top: 20px;
+  width: 100%;
 }
 
 footer .footer-bottom hr {
