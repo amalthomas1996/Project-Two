@@ -2216,6 +2216,7 @@ footer .logo {
   flex-direction: column;
   align-items: center;
   margin-right: 20px;
+  margin-top: -50px;
 }
 
 footer .logo img {
