@@ -174,10 +174,12 @@
     flex-direction: column;
     height: auto;
     padding: 10px;
+    align-items: start;
   }
 
   .logo {
     margin-bottom: 15px;
+    
   }
 
   .nav-links {
