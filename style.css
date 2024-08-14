@@ -179,7 +179,7 @@
 
   .logo {
     margin-bottom: 15px;
-    
+
   }
 
   .nav-links {
@@ -282,7 +282,7 @@
   font-weight: 500;
   text-align: center;
   border-radius: 36px;
-  padding:4px 20px;
+  padding: 4px 20px;
   margin-top: 20px;
   cursor: pointer;
   width: 143px;
@@ -357,7 +357,7 @@
   width: 80%;
   height: 1px;
   margin: 0px 30px;
-  background-color:#000000;
+  background-color: #000000;
   opacity: 10%;
 
 }
@@ -628,6 +628,169 @@
   transform: translateY(-2px);
 }
 
+/* Bookin section for mobile View  */
+
+.mobile-hero-section {
+  background-color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Header */
+.mobile-hero-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.mobile-hero-phone-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.mobile-hero-header-text {
+  font-size: 12px;
+  color: #8d8d8d;
+}
+
+/* App Banner */
+.mobile-app-banner {
+  background-image: url(./Assets/red-bg-vector.svg);
+  border-radius: 20px;
+  padding: 10px 10px;
+  height: 120px;
+  position: relative;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.mobile-app-banner-text {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.mobile-app-store-buttons img {
+  height: 35px;
+  width: 120px;
+  margin: 0 10px;
+}
+
+
+/* Booking Buttons */
+.mobile-booking-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+
+}
+
+.mobile-booking-button,
+.mobile-quick-book-button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 19.5px;
+  border: 2px solid #D71F26;
+  color: #ffffff;
+  background-color: #D71F26;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.mobile-quick-book-button {
+  background-color: #ffffff;
+  color: #D71F26;
+  margin-right: 0;
+}
+
+/* Tab Section */
+.mobile-tab-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #e6e6e6;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 57px;
+}
+
+.mobile-tab {
+  flex: 1;
+  text-align: center;
+  padding-bottom: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #000000;
+}
+
+.mobile-tab.active {
+  border-bottom: 2px solid #000000;
+}
+
+.mobile-vehicle-type {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Form Section */
+.mobile-form-section {
+  padding: 10px 0;
+}
+
+.mobile-form-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.mobile-form-icon {
+  margin-right: 10px;
+  height: 12px;
+  width: 9px;
+}
+
+.mobile-select,
+.mobile-datetime-input {
+  flex: 1;
+  border: none;
+  background-color: transparent;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  appearance: none;
+}
+
+
+/* Search Button */
+.mobile-search-button {
+  width: 201px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #D71F26;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  border: none;
+  cursor: pointer;
+}
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
@@ -667,10 +830,17 @@
   }
 }
 
+/* on web view  */
+@media (min-width: 768px) {
+  .mobile-hero-section {
+    display: none;
+  }
+}
+
+/* on mobile view */
 @media (max-width: 768px) {
   .booking-section {
-    margin: 20px 16px;
-    padding: 15px;
+    display: none;
   }
 
   .location-select {
@@ -715,6 +885,12 @@
     height: 24px;
   }
 }
+
+
+
+
+
+
 
 /* Side fixed Buttons */
 
@@ -1144,7 +1320,6 @@
 }
 
 /* Subscribe Section */
-/* Subscribe Section */
 .subscribe-container {
   margin: 20px 65px;
   padding: 40px;
@@ -1183,15 +1358,16 @@
 }
 
 .form-input-subscribe {
-  padding: 10px;
-  font-size: 12px;
+  padding: 12px 10px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  width: 223px;
-  flex: 0 0 223px;
+  width: 100%;
+  height: 48px;
   background-color: #F8F8F8;
+  box-sizing: border-box;
 }
 
 .subscribe-button {
@@ -1258,15 +1434,17 @@
 
 .phone-form input {
   width: 263px;
-  height: 30px;
-  padding: 10px;
+  height: 48px;
+  /* Updated height */
+  padding: 12px 10px;
   border-radius: 5px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   margin-bottom: 20px;
   background-color: #F8F8F8;
   border: none;
+  box-sizing: border-box;
 }
 
 .form-input-text {
@@ -1377,14 +1555,14 @@
   .form-input-subscribe {
     width: 100%;
     max-width: 300px;
-    /* Add a max-width to prevent it from becoming too large */
     margin-bottom: 10px;
+    height: 48px;
+    /* Ensure consistent height in smaller screens */
   }
 
   .subscribe-button {
     width: 100%;
     max-width: 300px;
-    /* Add a max-width to keep the button size consistent */
     height: 50px;
   }
 
@@ -1412,42 +1590,131 @@
 @media (max-width: 480px) {
   .subscribe-container {
     margin: 10px;
-    padding: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fffdfd;
+    color: #000000;
+    border-radius: 10px;
+  }
+
+  .subscribe-left {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   .subscribe-left h1 {
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 15px;
   }
 
   .subscribe-form {
-    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .form-input-subscribe {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #F8F8F8;
+    width: 100%;
+    height: 48px;
+    /* Ensure consistent height in smaller screens */
   }
 
   .subscribe-button {
-    font-size: 14px;
-    height: 45px;
+    padding: 15px 20px;
+    font-size: 16px;
+    background-color: #E21E26;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .subscribe-button:hover {
+    background-color: #b60805;
+    transform: translateY(-2px);
+  }
+
+  .subscribe-right {
+    width: 100%;
+    background-color: #E21E26;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .phone-mockup {
+    margin-bottom: 10px;
+  }
+
+  .phone-mockup img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
   }
 
   .phone-form p {
-    font-size: 10px;
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 10px;
   }
 
   .phone-form input {
-    font-size: 10px;
-    height: 25px;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    background-color: #F8F8F8;
   }
 
   .phone-button {
-    font-size: 12px;
-    height: 40px;
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .phone-button:hover {
+    color: #000000;
+    background-color: #d71f26;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  }
+
+  .form-input-text {
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+
+  .app-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
   }
 
   .app-buttons .app-button {
-    width: 80px;
+    width: 130px;
+    height: auto;
   }
 }
-
 
 
 /* Steps Section  */
