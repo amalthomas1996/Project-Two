@@ -13,6 +13,7 @@
   padding: 10px 20px;
   background-color: #fff;
   margin: 0 65px;
+
 }
 
 .logo {
@@ -152,6 +153,8 @@
   color: #000000;
   cursor: pointer;
 }
+
+
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
