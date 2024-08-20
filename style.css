@@ -660,7 +660,7 @@
 
 /* App Banner */
 .mobile-app-banner {
-  background-image: url(../Assets/red-bg-vector.svg);
+  background-image: url(Assets/red-bg-vector.svg);
   border-radius: 20px;
   padding: 10px 10px;
   height: 120px;
