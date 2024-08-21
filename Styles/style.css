@@ -137,6 +137,10 @@
   justify-content: right;
   font-size: 1rem;
   margin-right: 65px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  margin-left: 700px;
 }
 
 .under-text {
@@ -212,6 +216,12 @@
 
   .profile-link {
     margin-top: 10px;
+  }
+
+  .under-text-container {
+
+    justify-content: center;
+    margin: 10px 0;
   }
 }
 
