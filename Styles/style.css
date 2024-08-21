@@ -1322,6 +1322,32 @@
   }
 }
 
+/* Carousel Controls */
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
 /* Subscribe Section */
 .subscribe-container {
   margin: 20px 65px;
