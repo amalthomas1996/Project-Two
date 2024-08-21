@@ -481,7 +481,7 @@
 }
 
 /* hide date time picker */
-.form-item input[type="date"]::-webkit-calendar-picker-indicator,
+/* .form-item input[type="date"]::-webkit-calendar-picker-indicator,
 .form-item input[type="time"]::-webkit-inner-spin-button {
   display: none;
 }
@@ -493,7 +493,7 @@
 
 .form-item input[type="time"]::-webkit-calendar-picker-indicator {
   display: none;
-}
+} */
 
 .q-book {
   background-color: transparent;
