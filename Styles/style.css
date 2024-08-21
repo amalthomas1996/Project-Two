@@ -222,6 +222,8 @@
 
     justify-content: center;
     margin: 10px 0;
+    padding-left: -300;
+    margin-left: -700px;
   }
 }
 
@@ -240,7 +242,8 @@
 
   .under-text-container {
     justify-content: center;
-    margin: 10px 0;
+    margin: 10px 10px;
+
   }
 }
 
