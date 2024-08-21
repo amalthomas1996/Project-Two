@@ -146,12 +146,23 @@
   line-height: 1.5;
   text-align: center;
   opacity: 50%;
+  animation: marquee 15s linear infinite;
 }
 
 .under-text:hover {
   opacity: 1;
   color: #000000;
   cursor: pointer;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 
