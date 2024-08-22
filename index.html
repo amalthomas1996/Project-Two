@@ -154,9 +154,8 @@
 
   <!--Booking Section for Mobile-->
 
+  <!-- Booking Section for Mobile -->
   <section class="mobile-hero-section">
-
-
     <div class="mobile-app-banner">
       <div class="mobile-app-banner-text">
         Download our App for easy Accessibility Anytime, Anywhere!
@@ -165,7 +164,6 @@
         <img src="./Assets/app-store-button.svg" alt="App Store">
         <img src="./Assets/play-store-button.svg" alt="Google Play">
       </div>
-
     </div>
 
     <div class="mobile-booking-buttons">
@@ -174,10 +172,10 @@
     </div>
 
     <div class="mobile-tab-section">
-      <span class="mobile-tab active">Same as Pick-Up</span>
-      <span class="mobile-tab">Different Drop-Off</span>
+      <span class="mobile-tab active" id="same-pickup">Same as Pick-Up</span>
+      <span class="mobile-tab" id="different-dropoff">Different Drop-Off</span>
       <select class="mobile-vehicle-type">
-        <option value="" disabled selected>vehicle type</option>
+        <option value="" disabled selected>Vehicle Type</option>
         <option value="sedan">Sedan</option>
         <option value="suv">SUV</option>
         <option value="truck">Truck</option>
@@ -192,7 +190,7 @@
           <option value="" disabled selected>Pickup Location</option>
         </select>
       </div>
-      <div class="mobile-form-item">
+      <div class="mobile-form-item dropoff-location" id="dropoff-location">
         <img src="./Assets/location-icon.svg" alt="Location Icon" class="mobile-form-icon">
         <select class="mobile-select">
           <option value="" disabled selected>Drop Off Location</option>
@@ -210,6 +208,8 @@
 
     <button class="mobile-search-button">Search</button>
   </section>
+  <!-- Booking Section for Mobile End -->
+
 
   <!--Booking Section for Mobile End-->
 

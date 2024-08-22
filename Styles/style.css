@@ -658,8 +658,11 @@
 
 }
 
+/* ------------------------*/
+
 /* Bookin section for mobile View  */
 
+/* Booking section for mobile view */
 .mobile-hero-section {
   background-color: #ffffff;
   padding: 10px;
@@ -714,13 +717,11 @@
   margin: 0 10px;
 }
 
-
 /* Booking Buttons */
 .mobile-booking-buttons {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
-
 }
 
 .mobile-booking-button,
@@ -807,6 +808,18 @@
   appearance: none;
 }
 
+/* Transition for Drop-Off Location */
+.dropoff-location {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, height 0.3s ease;
+}
+
+.dropoff-location.show {
+  opacity: 1;
+  height: auto;
+}
 
 /* Search Button */
 .mobile-search-button {
@@ -822,6 +835,7 @@
   cursor: pointer;
 }
 
+/*-----------------------*/
 /* Responsive Styles */
 @media (max-width: 1024px) {
   .booking-section {
@@ -1215,6 +1229,7 @@
   .car-image {
     width: 300px;
     height: 250px;
+    object-fit: cover;
   }
 
   .car-details h3 {
@@ -1245,6 +1260,7 @@
   .car-image {
     width: 240px;
     height: 220px;
+    object-fit: cover;
   }
 
   .car-details h3 {
@@ -1279,6 +1295,7 @@
   .car-image {
     width: 200px;
     height: 200px;
+    object-fit: cover;
   }
 
   .car-details h3 {
@@ -1313,7 +1330,8 @@
 
   .car-image {
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
   }
 
   .car-details {
@@ -1330,7 +1348,8 @@
   }
 
   .car-svg-container {
-    gap: 8px;
+    gap: 2px;
+    display: flex;
   }
 
   .price-book-container {
@@ -2201,11 +2220,11 @@
 .faq-container {
   width: 80%;
   margin: 50px auto;
-  font-family: Arial, sans-serif;
+
 }
 
 .faq-container h2 {
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 400;
   text-align: center;
   margin-bottom: 20px;
@@ -2216,40 +2235,41 @@
   padding: 10px 0;
   cursor: pointer;
   margin-top: 20px;
-
 }
 
 .faq-question {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 19px;
   margin-bottom: 10px;
 }
 
 .faq-answer {
-  display: none;
-  font-size: 14px;
-  opacity: 80%;
-  margin-top: 10px;
+  max-height: 0;
+  overflow: hidden;
+  font-size: 12px;
+  opacity: 70%;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 
 .faq-item.active .faq-answer {
-  display: block;
+  max-height: 200px;
+  /* Adjust based on content */
+  opacity: 1;
 }
 
 .toggle-button {
   width: 24px;
   height: 24px;
-
 }
 
 .faq-item.active .toggle-button {
   content: url('../Assets/xicon.svg');
-
 }
+
 
 /* Footer */
 footer {

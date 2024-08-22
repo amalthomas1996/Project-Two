@@ -1,21 +1,4 @@
-//FAQ Section Open & Close
 
-const faqItems = document.querySelectorAll('.faq-item');
-
-faqItems.forEach(item => {
-  const question = item.querySelector('.faq-question');
-  const toggleButton = item.querySelector('.toggle-button');
-  const answer = item.querySelector('.faq-answer');
-
-  question.addEventListener('click', () => {
-    item.classList.toggle('active');
-    if (item.classList.contains('active')) {
-      toggleButton.src = './Assets/xicon.svg';
-    } else {
-      toggleButton.src = './Assets/+icon.svg';
-    }
-  });
-});
 
 //hamburger Menu
 const hamburger = document.getElementById('hamburger');
@@ -82,3 +65,56 @@ startSlideShow();
 slider.addEventListener('mouseover', stopSlideShow);
 slider.addEventListener('mouseout', startSlideShow);
 
+
+//FAQ Section Open & Close
+
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+  const question = item.querySelector('.faq-question');
+  const toggleButton = item.querySelector('.toggle-button');
+  const answer = item.querySelector('.faq-answer');
+
+  question.addEventListener('click', () => {
+    item.classList.toggle('active');
+    if (item.classList.contains('active')) {
+      toggleButton.src = './Assets/xicon.svg';
+    } else {
+      toggleButton.src = './Assets/+icon.svg';
+    }
+  });
+});
+
+
+//Dropoff functionality
+
+document.addEventListener("DOMContentLoaded", function () {
+  const samePickupTab = document.getElementById("same-pickup");
+  const differentDropoffTab = document.getElementById("different-dropoff");
+  const dropoffLocation = document.getElementById("dropoff-location");
+
+  // Function to handle the toggle between tabs
+  function toggleDropoffLocation(show) {
+    if (show) {
+      dropoffLocation.classList.add("show");
+    } else {
+      dropoffLocation.classList.remove("show");
+    }
+  }
+
+  // Event listeners for the tabs
+  samePickupTab.addEventListener("click", function () {
+    samePickupTab.classList.add("active");
+    differentDropoffTab.classList.remove("active");
+    toggleDropoffLocation(false);
+  });
+
+  differentDropoffTab.addEventListener("click", function () {
+    differentDropoffTab.classList.add("active");
+    samePickupTab.classList.remove("active");
+    toggleDropoffLocation(true);
+  });
+
+  // Set initial state to "Same as Pick-Up"
+  toggleDropoffLocation(false);
+});
