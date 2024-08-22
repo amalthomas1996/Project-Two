@@ -808,17 +808,21 @@
   appearance: none;
 }
 
-/* Transition for Drop-Off Location */
+/* Drop-Off Location Transition */
 .dropoff-location {
   opacity: 0;
   height: 0;
+  margin-top: -30px;
+  /* Adjust this value as needed */
   overflow: hidden;
-  transition: opacity 0.3s ease, height 0.3s ease;
+  transition: opacity 0.3s ease, height 0.3s ease, margin-top 0.3s ease;
 }
 
 .dropoff-location.show {
   opacity: 1;
   height: auto;
+  margin-top: 0;
+  /* Reset to normal margin when visible */
 }
 
 /* Search Button */
@@ -834,6 +838,7 @@
   border: none;
   cursor: pointer;
 }
+
 
 /*-----------------------*/
 /* Responsive Styles */
