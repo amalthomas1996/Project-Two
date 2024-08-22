@@ -41,14 +41,44 @@ loginSignupBtn.addEventListener('click', () => {
   hamburger.classList.remove('menu-open');
 });
 
+//Popular card Slider
+const slider = document.querySelector('.car-cards-container');
 
-// Change navbar background on scroll
-window.addEventListener('scroll', function () {
-  const navbar = document.querySelector('.navbar');
+let scrollAmount = 0;
+let maxScroll = slider.scrollWidth - slider.clientWidth;
+let autoSlideInterval;
 
-  if (window.scrollY > 0) {
-    navbar.classList.add('navbar-scroll');
+// Function to slide to the next card
+function slideNext() {
+  if (scrollAmount < maxScroll) {
+    scrollAmount += slider.clientWidth;
+    slider.scrollTo({
+      left: scrollAmount,
+      behavior: 'smooth'
+    });
   } else {
-    navbar.classList.remove('navbar-scroll');
+    scrollAmount = 0;
+    slider.scrollTo({
+      left: scrollAmount,
+      behavior: 'smooth'
+    });
   }
-});
+}
+
+// Function to start the slideshow
+function startSlideShow() {
+  autoSlideInterval = setInterval(slideNext, 3000);
+}
+
+// Function to stop the slideshow
+function stopSlideShow() {
+  clearInterval(autoSlideInterval);
+}
+
+// Start the slideshow on page load
+startSlideShow();
+
+// Event listeners to pause/resume slideshow on hover
+slider.addEventListener('mouseover', stopSlideShow);
+slider.addEventListener('mouseout', startSlideShow);
+

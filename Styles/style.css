@@ -150,7 +150,7 @@
   line-height: 1.5;
   text-align: center;
   opacity: 50%;
-  animation: marquee 15s linear infinite;
+  animation: marquee 13s linear infinite;
 }
 
 .under-text:hover {
@@ -165,7 +165,7 @@
   }
 
   to {
-    transform: translateX(-100%);
+    transform: translateX(-150%);
   }
 }
 
@@ -505,7 +505,7 @@
 }
 
 /* hide date time picker */
-.form-item input[type="date"]::-webkit-calendar-picker-indicator,
+/* .form-item input[type="date"]::-webkit-calendar-picker-indicator,
 .form-item input[type="time"]::-webkit-inner-spin-button {
   display: none;
 }
@@ -517,7 +517,7 @@
 
 .form-item input[type="time"]::-webkit-calendar-picker-indicator {
   display: none;
-}
+} */
 
 .q-book {
   background-color: transparent;
@@ -643,16 +643,19 @@
 .store-buttons {
   display: flex;
   gap: 10px;
+  cursor: pointer;
 }
 
 .store-buttons img {
   width: 109.87px;
   height: 32px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 .store-buttons img:hover {
   transform: translateY(-2px);
+
 }
 
 /* Bookin section for mobile View  */
@@ -1346,31 +1349,7 @@
   }
 }
 
-/* Carousel Controls */
-.carousel-wrapper {
-  position: relative;
-  width: 100%;
-}
 
-.carousel-control {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 10;
-}
-
-.carousel-control.prev {
-  left: 10px;
-}
-
-.carousel-control.next {
-  right: 10px;
-}
 
 /* Subscribe Section */
 .subscribe-container {
@@ -1530,6 +1509,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .app-buttons .app-button {
@@ -1994,7 +1974,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
+
 
 .step {
   width: 348px;
@@ -2003,6 +1985,12 @@
   text-align: center;
   padding: 20px;
   border: 1px solid black;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+  transform: translateY(-2px);
 }
 
 .step-icon {
@@ -2278,7 +2266,7 @@ footer .container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  max-width: 1200px;
+
   margin: 0 auto;
   width: 100%;
   gap: 10rem;
